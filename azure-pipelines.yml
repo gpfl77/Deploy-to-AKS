@@ -61,7 +61,7 @@ stages:
               namespace: 'default'
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
-              dockerRegistryEndpoint: 'LongdemoACR'
+              dockerRegistryEndpoint: 'myACR'
 
           - task: KubernetesManifest@0
             inputs:
