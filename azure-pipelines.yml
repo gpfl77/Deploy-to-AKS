@@ -37,8 +37,8 @@ stages:
   displayName: Deploy to Dev
   dependsOn: Build
   variables:
-    acrsecret: longdemoacrauth
-    acrdevurl: 'longdemoacr.azurecr.io'
+    acrsecret: LongdemoACRauth
+    acrdevurl: 'LongdemoACR.azurecr.io'
     replicaNo: 3
   jobs:
   - deployment: Deploy
