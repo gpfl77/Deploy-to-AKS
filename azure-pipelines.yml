@@ -62,6 +62,7 @@ stages:
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
               dockerRegistryEndpoint: 'myACR'
+              
           - task: replacetokens@3
             displayName: Replace Tokens
             inputs:
